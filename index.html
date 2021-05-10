@@ -1,89 +1,202 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Kei Kishimoto - Portfolio</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-    <link rel='stylesheet' type='text/css' href='index.css'>
-</head>
-<body>
+<html lang="en">
 
-    <section class='menu'>
-        <a class='menu-item' id='about'> <i class='fas fa-user'></i>About</a>
-        <a class='menu-item' id='about'> <i class='fas fa-feather-alt'></i>Skills</a>
-        <a class='menu-item' id='about'> <i class='fas fa-list-alt'></i>Resume</a>
-        <a class='menu-item' id='about'> <i class='fas fa-tasks'></i>Work</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="menu">
+        <a class="menu-item active" id="about"> <i class="fas fa-user"></i> About</a>
+        <a class="menu-item" id="skills"> <i class="fas fa-feather-alt"></i> Skills</a>
+        <a class="menu-item" id="resume"> <i class="fas fa-list-alt"></i> Resume</a>
+        <a class="menu-item" id="works"> <i class="fas fa-tasks"></i> Works</a>
     </section>
-    <section class='profile'>
-        <div class='img-container'></div>
-        <div class='profile-body'>
-            <p class='name'>Kei Kishimoto</p>
-            <p class='role'>UI/UX, Front-End, Marketing</p>
-            <div class='socials'>
-                <a href='#'><i class='fab fa-youtube'></i></a>
-                <a href='#'><i class='fab fa-facebook-f'></i></a>
-                <a href='#'><i class='fab fa-linkedin-in'></i></a>
-                <a href='#'><i class='fab fa-github'></i></a>
-                <a href='#'><i class='fab fa-twitter'></i></a>
-            </div>
-            <div class='action'>
-                <button>Download CV</button>
-                <button>Contact Me</button>
+
+    <section class="profile">
+        <div class="img-container"></div>
+        <div class="profile-body">
+            <p class="name">Kei Kishimoto</p>
+            <p class="role">Front End || UX/UI</p>
+            <div class="socials">
+                <a href="https://instagram.com/keikishim"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Keikishim/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/kei-kishimoto-a07a4919b/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Keikishim2"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/keikishim"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
+        <div class="actions">
+            <button>Download CV</button>
+            <button>Contact me</button>
+        </div>
     </section>
-
-    <section class='main'>
-        <section class='asset split about' id='about-section'>
-            <p class='title section-item'><span>About</span> me</p>
-            <div class='asset-body'>
-                <div class='section-item'>
-                    <p>This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio. This my sample portfolio</p>
+    <section class="main">
+        <section class="asset split about" id="about-section">
+            <p class="title section-item"><span>About</span> me</p>
+            <div class="asset-body">
+                <div class="section-item">
+                    <p>I am Kei, immersed in business technology and research. I ought to make a difference by specializing in designing yet functional websites and digital interfaces. With proper training as a marketer, it has been my passion to help clients achieve their goals and grow their brands. I work exceptionally hard with my team.</p>
                 </div>
-                <div class='section-item'>
-                    <div class='item'>
+                <div class="section-item">
+                    <div class="item">
                         <label>Age <span>.....</span></label>
-                        <p class='value'>22</p>
+                        <p class="value">22</p>
                     </div>
-                    <div class='item'>
+                    <div class="item">
                         <label>Country <span>.....</span></label>
-                        <p class='value'>Philippines</p>
+                        <p class="value">Manila, Philippines</p>
                     </div>
-                    <div class='item'>
+                    <div class="item">
                         <label>Remote <span>.....</span></label>
-                        <p class='value'>Available</p>
+                        <p class="value">Available</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class='asset'>
-            <p class='title section-item'><span>Main</span>Domains</p>
-            <div class='asset-body'>
-                <div class='domains section-item'>
-                    <div class='domain-item'>
-                        <i class='fas fa-paint-brush'></i>
-                        <div class='domain-name'>UX/UI</div>
-                        <p>User Interface and User Experience Design</p>
+        <section class="asset">
+            <p class="title section-item"><span>Main</span> Domains</p>
+            <div class="asset-body">
+                <div class="domains section-item">
+                    <div class="domain-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <p class="domain-name">UX/UI</p>
+                        <p>User Interface and User Experience</p>
                     </div>
-                    <div class='domain-item'>
-                        <i class='fas fa-code'></i>
-                        <div class='domain-name'>Front-End Development</div>
-                        <p>User Interface and User Experience Design</p>
+                    <div class="domain-item">
+                        <i class="fas fa-code"></i>
+                        <p class="domain-name">FrontEnd Developer</p>
+                        <p>HTML/CSS/JS</p>
                     </div>
-                    <div class='domain-item'>
-                        <i class='fas fa-server'></i>
-                        <div class='domain-name'>Graphic Design</div>
-                        <p>User Interface and User Experience Design</p>
+                    <div class="domain-item">
+                        <i class="fas fa-server"></i>
+                        <p class="domain-name">Marketing</p>
+                        <p>Design and Strategy for the Market</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="asset split" id="skills-section">
+            <p class="title section-item"><span>S</span>kills</p>
+            <div class="asset-body">
+                <div class="section-item">
+                    <p class="title"><i class="fas fa-code"></i>PROGRAM</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>HTML</li>
+                        <li><i class="fas fa-check"></i>CSS</li>
+                        <li><i class="fas fa-check"></i>Javascript</li>
+                        <li><i class="fas fa-check"></i>PHP</li>
+                        <li><i class="fas fa-check"></i>MySQL</li>
+                        <li><i class="fas fa-check"></i>SEO</li>
+                        <li><i class="fas fa-check"></i>CodeIgniter</li>
+                        <li><i class="fas fa-check"></i>OOP</li>
+                        <li><i class="fas fa-check"></i>ORM</li>
+                    </ul>
+                </div>
+                <div class="section-item">
+                    <p class="title"><i class="fas fa-tools"></i>TOOLS</p>
+                    <ul>
+                        <li class="ide"><i class="fas fa-check"></i>Sublime Text</li>
+                        <li class="ide"><i class="fas fa-check"></i>Visual Studio</li>
+                        <li class="ide"><i class="fas fa-check"></i>Webflow</li>
+                        <li class="ide"><i class="fas fa-check"></i>Wix</li>
+                        <li class="ide"><i class="fas fa-check"></i>Wordpress</li>
+                        <li class="ui"><i class="fas fa-check"></i>Adobe XD</li>
+                        <li class="ui"><i class="fas fa-check"></i>Figma</li>
+                        <li class="ui"><i class="fas fa-check"></i>Photoshop</li>
+                        <li class="ui"><i class="fas fa-check"></i>Illustrator</li>
+                        <li class="ui"><i class="fas fa-check"></i>Canva</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="asset split" id="resume-section">
+            <p class="title section-item"><span>R</span>esume</p>
+            <div class="asset-body">
+                <div class="section-item">
+                    <p class="title">EXPERIENCE</p>
+                    <div class="section-sub-item">
+                        <p class="time current">2020 - Present</p>
+                        <p class="item-name">LiDAR Annotator || Transcriptor</p>
+                        <p class="additional-info">Freelance</p>
+                        <p class="description">Data Annotation
+                        </p>
+                    </div>
+                    <div class="section-sub-item">
+                        <p class="time">2019 - 2020</p>
+                        <p class="item-name">Marketing Staff</p>
+                        <p class="additional-info">Pantronics International Corporation</p>
+                        <p class="description">Built strategies and designs to utilize the market</p>
+                    </div>
+                    <div class="section-sub-item">
+                        <p class="time">2018 - 2019</p>
+                        <p class="item-name">Writer || Graphic Designing</p>
+                        <p class="additional-info">Independent Contractor</p>
+                        <p class="description">Created a whole business hardware for an industrialist</p>
+                    </div>
+                </div>
+                <div class="section-item">
+                    <p class="title">EDUCATION</p>
+                    <div class="section-sub-item">
+                        <p class="time">2015-2019</p>
+                        <p class="item-name">De La Salle Araneta University</p>
+                        <p class="additional-info">Malabon, Philippines</p>
+                        <p class="description">BSBA Major in Financial Management</p>
+                    </div>
+                    <div class="section-sub-item">
+                        <p class="time">2012-2015</p>
+                        <p class="item-name">De La Salle Araneta University</p>
+                        <p class="additional-info">Malabon, Philippines</p>
+                        <p class="description">Secondary School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="asset" id="works-section">
+            <p class="title section-item"><span>Recent</span> Projects</p>
+            <div class="asset-body grid">
+                <div class="work-item">
+                    <div class="img-content">
+                        <img src="res.png" alt="project image">
+                        <a href="https://keikishim2.github.io/RESUME/" class="more-overlay">More Info...</a>
+                    </div>
+                    <p class="project-name">Resume</p>
+                </div>
+                <div class="work-item">
+                    <div class="img-content">
+                        <img src="ecom.png" alt="project image">
+                        <a href="https://github.com/Keikishim2/Capstone" class="more-overlay">More Info...</a>
+                    </div>
+                    <p class="project-name">E-Commerce</p>
+                </div>
+                <div class="work-item">
+                    <div class="img-content">
+                        <img src="mem.png" alt="project image">
+                        <a href="https://keikishim2.github.io/MatchingGame/" class="more-overlay">More Info...</a>
+                    </div>
+                    <p class="project-name">Memory Game</p>
+                </div>
+                <div class="work-item">
+                    <div class="img-content">
+                        <img src="cat.png" alt="project image">
+                        <a href="https://keikishim2.github.io/" class="more-overlay">More Info...</a>
+                    </div>
+                    <p class="project-name">Cat Hates Cucumber!</p>
+                </div>
+                <div class="work-item">
+                    <div class="img-content">
+                        <img src="snake.png" alt="project image">
+                        <a href="https://github.com/Keikishim2/SNAKEgame" class="more-overlay">More Info...</a>
+                    </div>
+                    <p class="project-name">Snake Game</p>
                 </div>
             </div>
         </section>
     </section>
-
-
-
-
-
 </body>
 </html>
