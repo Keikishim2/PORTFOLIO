@@ -10,7 +10,8 @@ button,
 i,
 .menu-item,
 .menu-item i {
-    transition: color   0.4s;
+    transition: color 0.4s;
+    text-decoration: none;
 }
 a:hover,
 button:hover,
@@ -35,6 +36,9 @@ body {
     align-items: center;
     border-radius: 4px;
     z-index: 2;
+}
+html{
+    scroll-behavior: smooth;
 }
 .menu-item {
     width: 75px;
@@ -134,7 +138,7 @@ button {
 }
 .main {
     max-height: 80vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     background-color: #fff;
     align-self: center;
     border-radius: 4px;
