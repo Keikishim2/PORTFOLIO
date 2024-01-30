@@ -7,183 +7,228 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./assets/stylesheets/index.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <section class="menu">
-        <a class="menu-item active" href='#about-section' id="about"> <i class="fas fa-user"></i> About</a>
-        <a class="menu-item" href='#skills-section' id="skills"> <i class="fas fa-feather-alt"></i> Skills</a>
-        <a class="menu-item" href='#resume-section' id="resume"> <i class="fas fa-list-alt"></i> Resume</a>
-        <a class="menu-item" href='#works-section' id="works"> <i class="fas fa-tasks"></i> Works</a>
+    <section id="header_and_splash_container">
+        <div class="top_container">
+            <div class="header">
+                <p>Kei Kishimoto</p>
+                <div class="contact_nav">
+                    <a href="#" class="resume">Resume</a>
+                    <a href="#" class="contact_me">Contact Me</a>
+                </div>
+            </div>
+            <div class="splash_container">
+                <h1>Hi! I'm <span>Kei</span>, a UI/UX Designer and a Front End Developer</h1>
+                <div class="splash_image">
+                    <div class="outside_ux">
+                        <div class="ux first"></div>
+                        <div class="ux second"></div>
+                        <div class="ux third"></div>
+                        <div class="ux fourth"></div>
+                    </div>
+                    <img src="./assets/images/kei_profile.png" alt="kei_profile">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="design_process_container">
+        <div class="design_process">
+            <h2 class="process"><span>Design Process</span></h2>
+        </div>
+        <ul>
+            <li class="design_content">
+                <div class="design_info">
+                    <h2>Identifying the Problem</h2>
+                    <p>The beginning of it all, this is part of the research and
+                        discover phase wherein a problem statement is identified
+                        and acknowledged. From here therein, A problem itself is
+                        to be explored and scrutinized for the possible solution.
+                    </p>
+                </div>
+                <img src="./assets/images/identify_problem.png" alt="identify_problem">
+            </li><!--
+        -->
+            <li class="design_content">
+                <div class="design_info">
+                    <h2>User Persona</h2>
+                    <p>This is the part where we establish a role for that sole
+                        problem in which we are focused on solving. Adding a
+                        persona creates a communication where we show
+                        empathy between the designer and the user to fully
+                        understand the connection existing in a problem and
+                        a possible solution.
+                    </p>
+                </div>
+                <img src="./assets/images/user_persona.png" alt="user_persona">
+            </li><!--
+            -->
+            <li class="design_content">
+                <div class="design_info">
+                    <h2>Wireframe + Prototype</h2>
+                    <p>After establishing user discussion, it is now time to create
+                        possible solution in terms of low-fidelity sketch or adding
+                        user diagrams to visualize the usability of the solution. It
+                        may be done on paper or any medium that means to deliver
+                        the demonstration for the initial idea.
+                    </p>
+                </div>
+                <img src="./assets/images/wireframe_prototype.png" alt="wireframe_prototype">
+            </li><!--
+            -->
+            <li class="design_content">
+                <div class="design_info">
+                    <h2>User Test Report</h2>
+                    <p>This is the key document to prove the usefulness of the
+                        solution created. Conducting user test aims to dig deeper
+                        on users' needs and pain points to be able to discuss with
+                        the team and understand what's going on and how the
+                        design should solve the problem.
+                    </p>
+                </div>
+                <img src="./assets/images/user_test.png" alt="user_test">
+            </li>
+        </ul>
+    </section>
+    <section id="design_projects_container">
+        <div class="design_process">
+            <h2 class="process"><span>Design Projects</span></h2>
+        </div>
+        <ul>
+            <li class="design_project">
+                <div class="design_text">
+                    <h2>Admin Dashboard</h2>
+                    <p>This is a marketing page being managed by an Admin Dashboard where he/she can track her page's
+                        performance as well as the team's progress all throughout the projects. This shows the overview
+                        of the product's key data, performance, reports, and KPIs with detailed analysis.</p>
+                </div>
+                <img src="./assets/images/admin.png" alt="admin">
+            </li><!--
+            -->
+            <li class="design_project">
+                <div class="design_text">
+                    <h2>Talent Outsourcing</h2>
+                    <p>Talent Outsourcing allows companies to pick the RIGHT talents where they can fully maximize
+                        manpower in their team. Finding talents are now in-demand to gauge the organization's needs
+                        outside without focusing too much on the internal processes. With Talent Outsourcing, business
+                        can choose whomever they want to interview and recruit.</p>
+                </div>
+                <img src="./assets/images/talent_outsourcing.png" alt="talent_outsourcing">
+            </li><!--
+            -->
+            <li class="design_project">
+                <div class="design_text">
+                    <h2>Musify</h2>
+                    <p>Musify, a semi-podcast app where you can listen to whichever mode you feel. This app focuses on
+                        engaging with community and letting the app share your podcast all over the world. Musify offers
+                        endless opportunity to listen to multiple categories such as gaming, music, news, etc. It allows
+                        you to be in your own safe place.</p>
+                </div>
+                <img src="./assets/images/musify.png" alt="musify">
+            </li><!--
+            -->
+            <li class="design_project">
+                <div class="design_text">
+                    <h2>CoBol Creatives</h2>
+                    <p>CoBol Creatives offers variety of services that caters all your business needs. Services include
+                        web designing, brand establishing, web development with SEO/SMO prioritization, etc. This is
+                        open for all the organization may it be local or international because it aims to help
+                        businesses thrive not just in the process of marketing but also in creatives.</p>
+                </div>
+                <img src="./assets/images/business_suite.png" alt="business_suite">
+            </li><!--
+            -->
+            <li class="design_project">
+                <div class="design_text">
+                    <h2>iExplorer</h2>
+                    <p>Are you an adventurous person? Or a wanderlust? This app is the best for you. Plan your
+                        destination with this cozy and quick app to tour you wherever you want. Just find-select-plan
+                        and you’re done. iExplorer aims to help people with their travelling agendas without causing too
+                        much energy to plan their destination ahead.</p>
+                </div>
+                <img src="./assets/images/iExplorer.png" alt="iExplorer">
+            </li>
+            <a href="#">More designs here ></a>
+        </ul>
     </section>
 
-    <section class="profile">
-        <div class="img-container"></div>
-        <div class="profile-body">
-            <p class="name">Kei Kishimoto</p>
-            <p class="role">Front End || UX/UI</p>
-            <div class="socials">
-                <a href="https://instagram.com/keikishim"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Keikishim/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.linkedin.com/in/kei-kishimoto-a07a4919b/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Keikishim2"><i class="fab fa-github"></i></a>
-                <a href="https://dribbble.com/keikishim"><i class="fab fa-dribbble"></i></a>
-            </div>
+    <section id="dev_projects_container">
+        <div class="design_process">
+            <h2 class="process"><span>Dev Projects</span></h2>
         </div>
-        <div class="actions">
-            <button>Download CV</button>
-            <button>Contact me</button>
+        <ul class="dev_projects_wrapper">
+            <li>
+                <div class="dev_project">
+                    <a href="#"><img src="./assets/images/resume.png" alt="resume"><h3>My Resume</h3></a>
+                </div>
+            </li><!--
+            -->
+            <li>
+                <div class="dev_project">
+                    <a href="#"><img src="./assets/images/cat_hates_cucumber.png" alt="cat_hates_cucumber">
+                    <h3>Cat Hates Cucumber</h3></a>
+                </div>
+            </li><!--
+            -->
+            <li>
+                <div class="dev_project">
+                    <a href="#"><img src="./assets/images/chibi_house.png" alt="chibi_house"><h3>Chibi House</h3></a>
+                </div>
+            </li><!--
+            --><li>
+                <div class="dev_project">
+                    <a href="#"><img src="./assets/images/matching_game.png" alt="matchine_game"><h3>Matching Game</h3></a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills_tools_container">
+        <div class="design_process">
+            <h2 class="process"><span class="skills">Skills & Tools</span></h2>
+        </div>
+        <p>I have been using plenty of programs and tools to suffice my
+            designing and coding skills. I am still in the process of improving
+            both my skills and knowledge as new tools arise.
+        </p>
+        <img src="./assets/images/tools.svg" alt="tools">
+        <div class="orbit"></div>
+    </section>
+
+    <section id="contact_details">
+        <div class="contact_info">
+            <h1>Contact</h1>
+            <p>I'm currently living in the Philippines and I would like to maximize the opportunity to do remote work so
+                that I can feel the satisfaction whithin my work and efforts.</p>
+            <span>Email: <a href="#">Keikishim2@gmail.com</a></span>
+            <ul class="social_container">
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/dribbble.svg" alt="dribbble">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/gmail.svg" alt="gmail">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/github.svg" alt="github">
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
-    <section class="main">
-        <section class="asset split about" id="about-section">
-            <p class="title section-item"><span>About</span> me</p>
-            <div class="asset-body">
-                <div class="section-item">
-                    <p>I am Kei, immersed in business technology and research. I ought to make a difference by specializing in designing yet functional websites and digital interfaces. With proper training as a marketer, it has been my passion to help clients achieve their goals and grow their brands. I work exceptionally hard with my team.</p>
-                </div>
-                <div class="section-item">
-                    <div class="item">
-                        <label>Age <span>.....</span></label>
-                        <p class="value">22</p>
-                    </div>
-                    <div class="item">
-                        <label>Country <span>.....</span></label>
-                        <p class="value">Manila, Philippines</p>
-                    </div>
-                    <div class="item">
-                        <label>Remote <span>.....</span></label>
-                        <p class="value">Available</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="asset">
-            <p class="title section-item"><span>Main</span> Domains</p>
-            <div class="asset-body">
-                <div class="domains section-item">
-                    <div class="domain-item">
-                        <i class="fas fa-paint-brush"></i>
-                        <p class="domain-name">UX/UI</p>
-                        <p>User Interface and User Experience</p>
-                    </div>
-                    <div class="domain-item">
-                        <i class="fas fa-code"></i>
-                        <p class="domain-name">FrontEnd Developer</p>
-                        <p>HTML/CSS/JS</p>
-                    </div>
-                    <div class="domain-item">
-                        <i class="fas fa-server"></i>
-                        <p class="domain-name">Marketing</p>
-                        <p>Design and Strategy for the Market</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="asset split" id="skills-section">
-            <p class="title section-item"><span>S</span>kills</p>
-            <div class="asset-body">
-                <div class="section-item">
-                    <p class="title"><i class="fas fa-code"></i>PROGRAM</p>
-                    <ul>
-                        <li><i class="fas fa-check"></i>HTML</li>
-                        <li><i class="fas fa-check"></i>CSS</li>
-                        <li><i class="fas fa-check"></i>Javascript</li>
-                        <li><i class="fas fa-check"></i>PHP</li>
-                        <li><i class="fas fa-check"></i>MySQL</li>
-                        <li><i class="fas fa-check"></i>SEO</li>
-                        <li><i class="fas fa-check"></i>CodeIgniter</li>
-                        <li><i class="fas fa-check"></i>OOP</li>
-                        <li><i class="fas fa-check"></i>ORM</li>
-                    </ul>
-                </div>
-                <div class="section-item">
-                    <p class="title"><i class="fas fa-tools"></i>TOOLS</p>
-                    <ul>
-                        <li class="ide"><i class="fas fa-check"></i>Sublime Text</li>
-                        <li class="ide"><i class="fas fa-check"></i>Visual Studio</li>
-                        <li class="ide"><i class="fas fa-check"></i>Webflow</li>
-                        <li class="ide"><i class="fas fa-check"></i>Wix</li>
-                        <li class="ide"><i class="fas fa-check"></i>Wordpress</li>
-                        <li class="ui"><i class="fas fa-check"></i>Adobe XD</li>
-                        <li class="ui"><i class="fas fa-check"></i>Figma</li>
-                        <li class="ui"><i class="fas fa-check"></i>Photoshop</li>
-                        <li class="ui"><i class="fas fa-check"></i>Illustrator</li>
-                        <li class="ui"><i class="fas fa-check"></i>Canva</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="asset split" id="resume-section">
-            <p class="title section-item"><span>R</span>esume</p>
-            <div class="asset-body">
-                <div class="section-item">
-                    <p class="title">EXPERIENCE</p>
-                    <div class="section-sub-item">
-                        <p class="time current">2020 - Present</p>
-                        <p class="item-name">LiDAR Annotator || Transcriptor</p>
-                        <p class="additional-info">Freelance</p>
-                        <p class="description">Data Annotation
-                        </p>
-                    </div>
-                    <div class="section-sub-item">
-                        <p class="time">2019 - 2020</p>
-                        <p class="item-name">Marketing Staff</p>
-                        <p class="additional-info">Pantronics International Corporation</p>
-                        <p class="description">Built strategies and designs to utilize the market</p>
-                    </div>
-                    <div class="section-sub-item">
-                        <p class="time">2018 - 2019</p>
-                        <p class="item-name">Writer || Graphic Designing</p>
-                        <p class="additional-info">Independent Contractor</p>
-                        <p class="description">Created a whole business hardware for an industrialist</p>
-                    </div>
-                </div>
-                <div class="section-item">
-                    <p class="title">EDUCATION</p>
-                    <div class="section-sub-item">
-                        <p class="time">2015-2019</p>
-                        <p class="item-name">De La Salle Araneta University</p>
-                        <p class="additional-info">Malabon, Philippines</p>
-                        <p class="description">BSBA Major in Financial Management</p>
-                    </div>
-                    <div class="section-sub-item">
-                        <p class="time">2012-2015</p>
-                        <p class="item-name">De La Salle Araneta University</p>
-                        <p class="additional-info">Malabon, Philippines</p>
-                        <p class="description">Secondary School</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="asset" id="works-section">
-            <p class="title section-item"><span>Recent</span> Projects</p>
-            <div class="asset-body grid">
-                <div class="work-item">
-                    <div class="img-content">
-                        <img src="res.png" alt="project image">
-                        <a href="https://keikishim2.github.io/RESUME/" class="more-overlay">More Info...</a>
-                    </div>
-                    <p class="project-name">Resume</p>
-                </div>
-                <div class="work-item">
-                    <div class="img-content">
-                        <img src="ecom.png" alt="project image">
-                        <a href="https://github.com/Keikishim2/Capstone" class="more-overlay">More Info...</a>
-                    </div>
-                    <p class="project-name">E-Commerce</p>
-                </div>
-                <div class="work-item">
-                    <div class="img-content">
-                        <img src="cat.png" alt="project image">
-                        <a href="https://keikishim2.github.io/" class="more-overlay">More Info...</a>
-                    </div>
-                    <p class="project-name">Cat Hates Cucumber!</p>
-                </div>
-            </div>
-        </section>
-    </section>
+
 </body>
+
 </html>
