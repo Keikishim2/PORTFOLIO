@@ -42,6 +42,83 @@ body {
   background: linear-gradient(99deg, #0c423e 3.07%, #212121 65.03%);
   overflow-x: hidden;
 }
+.header {
+  align-items: center;
+  background: #212121;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .home {
+  color: #fff;
+  font: 16px/16px 'Lato', sans-serif;
+  font-weight: 800;
+  padding: 0 90px;
+  text-decoration: none;
+}
+.header button {
+  display: none;
+}
+.header .mobile_nav {
+  display: none;
+}
+.header .contact_nav {
+  align-items: center;
+  display: flex;
+  padding: 0 90px;
+}
+.header .contact_nav .case {
+  margin-left: 16px;
+}
+.header .contact_nav .case > a {
+  font: normal 16px/16px 'Lato', sans-serif;
+  position: relative;
+}
+.header .contact_nav .case #case_studies ul {
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  position: absolute;
+  right: 300px;
+  top: 60px;
+}
+.header .contact_nav .case #case_studies ul li {
+  background: #212121;
+  border-radius: 4px;
+  color: #fff;
+  height: auto;
+  max-width: 115px;
+  padding: 16px 10px;
+  text-align: center;
+  width: 100%;
+}
+.header .contact_nav .case #case_studies ul li:nth-of-type(1) {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.header .contact_nav .case #case_studies ul li:nth-of-type(2) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.header .contact_nav .case #case_studies ul li:hover {
+  background: #00AA9C;
+}
+.header .contact_nav .case #case_studies ul li a {
+  font: normal 16px/24px 'Lato', sans-serif;
+}
+.header .contact_nav a {
+  color: #fff;
+  font: normal 16px/16px 'Lato', sans-serif;
+  text-decoration: none;
+}
+.header .contact_nav a.contact_me {
+  border-radius: 12px;
+  border: 2px solid #14FFEC;
+  padding: 9px 62px;
+  margin: 0 0 0 20px;
+}
 .design_process {
   position: relative;
 }
@@ -86,35 +163,6 @@ body {
   .design_process h2 span {
     font: 600 24px/32px 'Lato', sans-serif;
   }
-}
-#header_and_splash_container .top_container .header {
-  align-items: center;
-  background: #212121;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  height: 64px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#header_and_splash_container .top_container .header p {
-  color: #fff;
-  font: 16px/16px 'Lato', sans-serif;
-  font-weight: 800;
-  padding: 0 90px;
-}
-#header_and_splash_container .top_container .header .contact_nav {
-  padding: 0 90px;
-}
-#header_and_splash_container .top_container .header .contact_nav a {
-  color: #fff;
-  font: normal 16px/16px 'Lato', sans-serif;
-  text-decoration: none;
-}
-#header_and_splash_container .top_container .header .contact_nav a.contact_me {
-  border-radius: 12px;
-  border: 2px solid #14FFEC;
-  padding: 9px 62px;
-  margin: 0 0 0 20px;
 }
 #header_and_splash_container .splash_container {
   background-image: url("../../assets/images/designer_bg.svg");
@@ -210,6 +258,61 @@ body {
   }
   #header_and_splash_container .top_container .splash_container .splash_image img {
     height: 500px;
+  }
+}
+@media screen and (max-width: 868px) {
+  #header_and_splash_container .top_container .header button {
+    background: transparent;
+    display: block !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding-right: 16px;
+    position: relative;
+    cursor: pointer;
+  }
+  #header_and_splash_container .top_container .header .contact_nav {
+    display: none;
+  }
+  #header_and_splash_container .top_container .header .home {
+    padding: 0 16px;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav {
+    background: #212121;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    margin-right: 16px;
+    max-width: 206px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    z-index: 999;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav.active {
+    display: block !important;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav > a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    display: block;
+    margin: 12px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav ul {
+    margin-bottom: 0px;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav ul li {
+    padding: 10px 0 16px 16px;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav ul li:hover {
+    background: #00AA9C;
+  }
+  #header_and_splash_container .top_container .header .mobile_nav ul li a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 839px) {
@@ -556,5 +659,502 @@ body {
   #contact_details .contact_info h1 {
     font: 600 32px/68px 'Lato', sans-serif;
     margin: 0 0 38px;
+  }
+}
+#busybee_case_study_section {
+  background: linear-gradient(99deg, #0c423e 3.07%, #212121 65.03%);
+}
+#busybee_case_study_section .top_container .header .contact_nav .case #case_studies {
+  background: #212121;
+}
+#busybee_case_study_section .splash_container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 90px;
+}
+#busybee_case_study_section .splash_container .text_case h2 {
+  color: #fff;
+  font: normal 36px/48px 'Lato', sans-serif;
+}
+#busybee_case_study_section .splash_container .text_case h2 span {
+  display: block;
+}
+#busybee_case_study_section .splash_container .text_case h1 {
+  color: #fff;
+  font: 700 56px/68px 'Lato', sans-serif;
+  max-width: 730px;
+  width: 100%;
+}
+#busybee_case_study_section .splash_container .text_case h1 span {
+  color: #14FFEC;
+}
+#busybee_case_study_section .splash_container .splash_image img {
+  max-width: 1000px;
+}
+@media screen and (max-width: 1250px) {
+  #busybee_case_study_section .top_container .splash_container {
+    padding: 24px 0 24px;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case {
+    padding-left: 16px;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case h1 {
+    font: 700 32px/56px 'Lato', sans-serif;
+    max-width: 100%;
+    width: 100%;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case h2 {
+    font: normal 24px/32px 'Lato', sans-serif;
+  }
+  #busybee_case_study_section .top_container .splash_container .splash_image img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 868px) {
+  #busybee_case_study_section .top_container .header button {
+    background: transparent;
+    display: block !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding-right: 16px;
+    position: relative;
+    cursor: pointer;
+  }
+  #busybee_case_study_section .top_container .header .contact_nav {
+    display: none;
+  }
+  #busybee_case_study_section .top_container .header .home {
+    padding: 0 16px;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav {
+    background: #212121;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    margin-right: 16px;
+    max-width: 206px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    z-index: 999;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav.active {
+    display: block !important;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav > a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    display: block;
+    margin: 12px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav ul {
+    margin-bottom: 0px;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav ul li {
+    padding: 10px 0 16px 16px;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav ul li:hover {
+    background: #00AA9C;
+  }
+  #busybee_case_study_section .top_container .header .mobile_nav ul li a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  #busybee_case_study_section {
+    background: transparent;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case {
+    padding: 24px 16px;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case h1 {
+    font: 700 24px/32px 'Lato', sans-serif;
+  }
+  #busybee_case_study_section .top_container .splash_container .text_case h2 {
+    font: normal 16px/24px 'Lato', sans-serif;
+  }
+  #busybee_case_study_section .top_container .splash_container .splash_image {
+    display: none;
+  }
+}
+#design_process_busybee {
+  padding: 50px 90px;
+}
+#design_process_busybee ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 100px 0;
+}
+#design_process_busybee ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+}
+#design_process_busybee ul li h1 {
+  color: #fff;
+  font: 700 56px/68px 'Lato', sans-serif;
+  max-width: 730px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#design_process_busybee ul li img {
+  margin: 10px 0 24px;
+  width: 100%;
+}
+#design_process_busybee ul li ol {
+  background: linear-gradient(99deg, #283f41 3.07%, #283f41 20.03%);
+  border-radius: 24px;
+  list-style: disc;
+  margin-bottom: 24px;
+  padding: 24px;
+  text-align: left;
+}
+#design_process_busybee ul li ol p {
+  color: #fff;
+  font: normal 32px/40px 'Lato', sans-serif;
+  margin-right: auto;
+  text-align: left;
+}
+#design_process_busybee ul li ol li {
+  color: #fff;
+  display: list-item;
+  font: 700 32px/40px 'Lato', sans-serif;
+  margin-left: 30px;
+  padding: 10px 4px;
+}
+@media screen and (max-width: 1250px) {
+  #design_process_busybee ul li h1 {
+    font: 700 32px/56px 'Lato', sans-serif;
+  }
+  #design_process_busybee ul li ol li {
+    font: 700 24px/32px 'Lato', sans-serif;
+  }
+  #design_process_busybee ul li ol p {
+    font: normal 24px/32px 'Lato', sans-serif;
+  }
+}
+@media screen and (max-width: 690px) {
+  #design_process_busybee {
+    padding: 50px 16px;
+  }
+  #design_process_busybee ul {
+    padding-top: 50px;
+  }
+  #design_process_busybee ul li {
+    padding-top: 16px;
+  }
+  #design_process_busybee ul li ol li {
+    font: 700 16px/24px 'Lato', sans-serif;
+  }
+  #design_process_busybee ul li ol p {
+    font: normal 16px/24px 'Lato', sans-serif;
+  }
+}
+#case_end {
+  background-image: url("../images/case_end.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 540px;
+  width: 100%;
+}
+#case_end .case_container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1180px;
+  position: relative;
+  transform: translateY(260px);
+}
+#case_end .case_container h3 {
+  color: #fff;
+  font: 700 56px/68px 'Lato', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+#case_end .case_container a {
+  color: #14FFEC;
+  display: block;
+  font: normal 24px/32px 'Lato', sans-serif;
+  margin: 24px auto;
+  max-width: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  #case_end {
+    background-size: cover;
+  }
+  #case_end .case_container h3 {
+    font: 700 32px/40px 'Lato', sans-serif;
+    max-width: 460px;
+  }
+}
+#medgrocer_case_study_section {
+  background: linear-gradient(99deg, #0c423e 3.07%, #212121 65.03%);
+}
+#medgrocer_case_study_section .top_container .header .contact_nav .case #case_studies {
+  background: #212121;
+}
+#medgrocer_case_study_section .splash_container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 90px;
+}
+#medgrocer_case_study_section .splash_container .text_case h2 {
+  color: #fff;
+  font: normal 36px/48px 'Lato', sans-serif;
+}
+#medgrocer_case_study_section .splash_container .text_case h2 span {
+  display: block;
+}
+#medgrocer_case_study_section .splash_container .text_case h1 {
+  color: #fff;
+  font: 700 56px/68px 'Lato', sans-serif;
+  max-width: 730px;
+  width: 100%;
+}
+#medgrocer_case_study_section .splash_container .text_case h1 span {
+  color: #14FFEC;
+}
+#medgrocer_case_study_section .splash_container .splash_image img {
+  max-width: 1000px;
+}
+@media screen and (max-width: 1250px) {
+  #medgrocer_case_study_section .top_container .splash_container {
+    padding: 24px 0 24px;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case {
+    padding-left: 16px;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case h1 {
+    font: 700 32px/56px 'Lato', sans-serif;
+    max-width: 100%;
+    width: 100%;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case h2 {
+    font: normal 24px/32px 'Lato', sans-serif;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .splash_image img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 868px) {
+  #medgrocer_case_study_section .top_container .header button {
+    background: transparent;
+    display: block !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding-right: 16px;
+    position: relative;
+    cursor: pointer;
+  }
+  #medgrocer_case_study_section .top_container .header .contact_nav {
+    display: none;
+  }
+  #medgrocer_case_study_section .top_container .header .home {
+    padding: 0 16px;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav {
+    background: #212121;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: none;
+    margin-right: 16px;
+    max-width: 206px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    z-index: 999;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav.active {
+    display: block !important;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav > a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    display: block;
+    margin: 12px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav ul {
+    margin-bottom: 0px;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav ul li {
+    padding: 10px 0 16px 16px;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav ul li:hover {
+    background: #00AA9C;
+  }
+  #medgrocer_case_study_section .top_container .header .mobile_nav ul li a {
+    color: #fff;
+    font: normal 16px/24px 'Lato', sans-serif;
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  #medgrocer_case_study_section {
+    background: transparent;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case {
+    padding: 24px 16px;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case h1 {
+    font: 700 24px/32px 'Lato', sans-serif;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .text_case h2 {
+    font: normal 16px/24px 'Lato', sans-serif;
+  }
+  #medgrocer_case_study_section .top_container .splash_container .splash_image {
+    display: none;
+  }
+}
+#design_process_medgrocer {
+  padding: 50px 90px;
+}
+#design_process_medgrocer ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 50px 0;
+}
+#design_process_medgrocer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-bottom: 50px;
+}
+#design_process_medgrocer ul li h1 {
+  color: #fff;
+  font: normal 32px/40px 'Lato', sans-serif;
+  margin-bottom: 50px;
+  max-width: 730px;
+  width: 100%;
+}
+#design_process_medgrocer ul li .checklist {
+  display: flex;
+  flex-wrap: wrap;
+}
+#design_process_medgrocer ul li .checklist img {
+  margin-right: 16px;
+  width: auto;
+}
+#design_process_medgrocer ul li ul li {
+  color: #fff;
+  display: list-item;
+}
+#design_process_medgrocer ul li ul li p {
+  color: #fff;
+  font: normal 24px/32px 'Lato', sans-serif;
+}
+#design_process_medgrocer ul li ul.challenges {
+  list-style: disc;
+  padding-left: 16px;
+}
+#design_process_medgrocer ul li p {
+  color: #fff;
+  font: normal 24px/32px 'Lato', sans-serif;
+}
+#design_process_medgrocer ul li img {
+  margin: 20px 0 24px;
+  width: 100%;
+}
+#design_process_medgrocer ul li ol {
+  background: #9DE0E0;
+  border-radius: 8px;
+  padding: 16px 16px 0;
+}
+#design_process_medgrocer ul li ol p {
+  color: #0D6D6E;
+  font: normal 24px/32px 'Lato', sans-serif;
+}
+#design_process_medgrocer ul li ol li p {
+  font: normal 24px/32px 'Lato', sans-serif;
+}
+#design_process_medgrocer ul li ol li p span {
+  color: #777777;
+}
+@media screen and (max-width: 1250px) {
+  #design_process_medgrocer ul li h1 {
+    font: 700 32px/56px 'Lato', sans-serif;
+  }
+  #design_process_medgrocer ul li ol p {
+    font: normal 24px/32px 'Lato', sans-serif;
+  }
+}
+@media screen and (max-width: 690px) {
+  #design_process_medgrocer {
+    padding: 50px 16px;
+  }
+  #design_process_medgrocer ul {
+    padding-top: 50px;
+  }
+  #design_process_medgrocer ul li {
+    padding-top: 0px;
+  }
+  #design_process_medgrocer ul li .checklist img {
+    width: 100%;
+  }
+  #design_process_medgrocer ul li h1 {
+    font: normal 24px/32px 'Lato', sans-serif;
+    margin-bottom: 10px;
+  }
+  #design_process_medgrocer ul li p {
+    font: normal 16px/24px 'Lato', sans-serif !important;
+  }
+  #design_process_medgrocer ul li ol p {
+    font: normal 16px/24px 'Lato', sans-serif;
+  }
+}
+#case_end {
+  background-image: url("../images/case_end.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 540px;
+  width: 100%;
+}
+#case_end .case_container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1180px;
+  position: relative;
+  transform: translateY(260px);
+}
+#case_end .case_container h3 {
+  color: #fff;
+  font: 700 56px/68px 'Lato', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+#case_end .case_container a {
+  color: #14FFEC;
+  display: block;
+  font: normal 24px/32px 'Lato', sans-serif;
+  margin: 24px auto;
+  max-width: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  #case_end {
+    background-size: cover;
+  }
+  #case_end .case_container h3 {
+    font: 700 32px/40px 'Lato', sans-serif;
+    max-width: 460px;
   }
 }

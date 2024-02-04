@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/stylesheets/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo_portfolio.ico">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -15,10 +20,29 @@
     <section id="header_and_splash_container">
         <div class="top_container">
             <div class="header">
-                <p>Kei Kishimoto</p>
+                <a href="index.html" class="home">Kei Kishimoto</a>
+                <button type="button" id="sidenav"><img src="./assets/images/menu.svg" alt="menu"></button>
                 <div class="contact_nav">
-                    <a href="#" class="resume">Resume</a>
-                    <a href="#" class="contact_me">Contact Me</a>
+                    <a href="https://drive.google.com/file/d/1fZBW8CCQuY5VVvE5zafj0FwM9rrk2e79/view?usp=sharing" class="resume">Resume</a>
+                    <div class="case">
+                        <a href="#">Case Study</a>
+                        <div id="case_studies">
+                            <ul>
+                                <li><a href="medgrocer.html">MedGrocer</a></li>
+                                <li><a href="busybee_case.html">BusyBee App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="Mailto:keikishim2@gmail.com" class="contact_me">Contact Me</a>
+                </div>
+                <div class="mobile_nav" id="sidebar">
+                    <a href="https://drive.google.com/file/d/1fZBW8CCQuY5VVvE5zafj0FwM9rrk2e79/view?usp=sharing" class="resume">Resume</a>
+                    <a href="#sub_menu" data-toggle="collapse" class="dropdown-toggle">Case Study</a>
+                    <ul class="collapse list-unstyled" id="sub_menu">
+                        <li><a href="medgrocer.html">MedGrocer</a></li>
+                        <li><a href="busybee_case.html">BusyBee App</a></li>
+                    </ul>
+                    <a href="Mailto:keikishim2@gmail.com" class="contact_me">Contact Me</a>
                 </div>
             </div>
             <div class="splash_container">
@@ -143,13 +167,10 @@
             -->
             <li class="design_project">
                 <div class="design_text">
-                    <h2>iExplorer</h2>
-                    <p>Are you an adventurous person? Or a wanderlust? This app is the best for you. Plan your
-                        destination with this cozy and quick app to tour you wherever you want. Just find-select-plan
-                        and you’re done. iExplorer aims to help people with their travelling agendas without causing too
-                        much energy to plan their destination ahead.</p>
+                    <h2>MedGrocer</h2>
+                    <p>This is an e-commerce healthcare delivery web app where people can order medicines and have them delivered right in their homes. I designed this website and received the certificate for accomplishing the goal of MedGrocer, which is to maintain user experience and provide solutions to people in need of health medicines.</p>
                 </div>
-                <img src="./assets/images/iExplorer.png" alt="iExplorer">
+                <img src="./assets/images/medgrocer.png" alt="MedGrocer">
             </li>
             <a href="#">More designs here ></a>
         </ul>
