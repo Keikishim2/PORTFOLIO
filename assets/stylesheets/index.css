@@ -450,6 +450,12 @@ body {
   margin-bottom: 4rem;
   overflow: hidden;
 }
+#design_projects_container ul li a {
+  border: none;
+  padding: 0 !important;
+  text-decoration: none;
+  width: -webkit-fill-available;
+}
 #design_projects_container ul li .design_text {
   padding: 32px 32px;
 }
