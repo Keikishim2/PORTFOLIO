@@ -454,7 +454,6 @@ body {
   border: none;
   padding: 0 !important;
   text-decoration: none;
-  width: -webkit-fill-available;
 }
 #design_projects_container ul li .design_text {
   padding: 32px 32px;
@@ -493,6 +492,9 @@ body {
 @media screen and (max-width: 1115px) {
   #design_projects_container ul li {
     flex-direction: column-reverse;
+  }
+  #design_projects_container ul li a {
+    width: -webkit-fill-available;
   }
   #design_projects_container ul li img {
     object-fit: inherit;
