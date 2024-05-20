@@ -335,7 +335,7 @@ body {
   width: 230px;
 }
 #header_and_splash_container .splash_container .splash_image .outside_ux .ux.second {
-  background-image: url("../../assets/images/second.svg");
+  background-image: url("../../assets/images/ui_ux.svg");
   height: 67px;
   top: 175px;
   right: -75px;
@@ -704,7 +704,8 @@ body {
   }
   #design_projects_container ul li img {
     object-fit: inherit;
-    width: -webkit-fill-available;
+    max-width: -webkit-fill-available !important;
+    width: 100%;
   }
 }
 @media screen and (max-width: 770px) {
